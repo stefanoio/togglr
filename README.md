@@ -7,10 +7,15 @@ It works on any modern browser (IE10+) and has no dependency from any other libr
 It works with (configurable) attributes on the trigger nodes. The following explanation assumes the default namespace `data-togglr-` is used.
 
 `data-togglr-target=“SELECTOR”` required, identify with a css3 SELECTOR which nodes shall be targeted by the change
+
 `data-togglr-toggle=“CLASS”` toggles CLASS on selected nodes
+
 `data-togglr-add=“CLASS”` adds CLASS on selected nodes
+
 `data-togglr-remove=“CLASS”` removes CLASS on selected nodes
+
 `data-togglr-exclusive=“CLASS”` toggles CLASS on selected nodes and removes it from their siblings
+
 `data-togglr-exclusiveAdd=“CLASS”` adds CLASS on selected nodes and removes it from their siblings
 
 If no other option than `data-togglr-target` is provided, the behavior defaults to `data-togglr-toggle=“isActive”` (`isActive` is the default class and can be configured otherwise).
