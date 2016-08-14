@@ -1,7 +1,7 @@
 # Togglr
 ## The super lightweight zero dependencies useful utility for non prehistoric browsers.
 
-Toggler is a small (<1KB) utility specialized in one most common web tasks: adding or removing a class from one or more DOM nodes.
+Toggler is a small (<1KB) utility specialized in one of the most common web tasks: adding or removing a class from one or more DOM nodes.
 It works on any modern browser (IE10+) and has no dependency from any other libraries.
 
 It works with (configurable) attributes on the trigger nodes. The following explanation assumes the default namespace `data-togglr-` is used.
