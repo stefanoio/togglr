@@ -1,0 +1,32 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>togglr - examples - dismiss message</title>
+<style>
+.messageA__wrapper,
+.messageB__wrapper {
+	margin-top: 10px;
+	border: 1px solid #000;
+}
+.messageA__wrapper {
+	display: none;
+}
+.messageA__wrapper.isOpen {
+	display: block;
+}
+.messageB__wrapper.isClosed {
+	display: none;
+}
+</style>
+
+<h1><a href="https://github.com/stefanoio/togglr">Togglr</a> dismiss message example</h1>
+<a href="index.html">Examples index</a>
+<div class="messageA__wrapper isOpen">
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+	<button type="button" data-togglr-remove="isOpen" data-togglr-target=".messageA__wrapper">Ok</button>
+</div>
+<div class="messageB__wrapper isOpen">
+		<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+	<button type="button" data-togglr-add="isClosed" data-togglr-target=".messageB__wrapper">Ok</button>
+</div>
+
+<script src="../dist/togglr.min.js"></script>

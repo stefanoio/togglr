@@ -1,0 +1,40 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>togglr - examples - basic toggle</title>
+<style>
+.red {
+	color: #f00;
+}
+.red.isActive {
+	color: #0f0;
+}
+.pseudo::before {
+	content: "Click me";
+}
+.pseudo.isActive::before {
+	content: "Now click me again";
+}
+.next {
+	display: none;
+}
+.next.isActive {
+	display: inline-block;
+}
+</style>
+
+<h1><a href="https://github.com/stefanoio/togglr">Togglr</a> basic toggle example</h1>
+<a href="index.html">Examples index</a>
+<p>
+	<button type="button" data-togglr-target=".red" class="red">click me</button>
+</p>
+<p>
+	<button type="button" data-togglr-target=".pseudo" class="pseudo"></button>
+</p>
+<p>
+	<button type="button" data-togglr-target=".next">Click me</button>
+	<button type="button" data-togglr-target=".next" class="next">Now click me</button>
+	<button type="button" data-togglr-target=".next" class="next">or me</button>
+</p>
+
+<script src="../dist/togglr.min.js"></script>
+

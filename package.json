@@ -1,0 +1,24 @@
+{
+  "name": "togglr",
+  "version": "1.0.0",
+  "description": "The super lightweight zero dependencies useful utility for non prehistoric browsers.",
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanoio/togglr.git"
+  },
+  "author": "Stefano Peloso",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/stefanoio/togglr/issues"
+  },
+  "scripts": {
+    "build": "uglifyjs src/togglr.js -o dist/togglr.min.js -c -m"
+  },
+  "homepage": "https://github.com/stefanoio/togglr#readme",
+  "devDependencies": {
+    "uglify-js": "^2.7.0"
+  }
+}
