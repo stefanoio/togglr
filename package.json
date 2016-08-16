@@ -1,7 +1,7 @@
 {
   "name": "togglr",
   "version": "1.0.0",
-  "description": "The super lightweight zero dependencies useful utility for non prehistoric browsers.",
+  "description": "The super lightweight zero dependencies useful utility.",
   "directories": {
     "example": "examples"
   },
