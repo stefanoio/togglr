@@ -68,19 +68,19 @@
 		},
 
 		ready = function() {
-			if("classList" in document.body) {
-				document.documentElement.classList.add("togglr");
-				document.body.addEventListener("click", click, true);
-			} else {
-				console.error("togglr: unsupported browser");
-			}
+			document.documentElement.classList.add("togglr");
+			document.body.addEventListener("click", click, true);
 		},
 
 		init = function() {
-			if(document.readyState === "loading") {
-				document.addEventListener("DOMContentLoaded", ready);
+			if("classList" in document.body) {
+				if(document.readyState === "loading") {
+					document.addEventListener("DOMContentLoaded", ready);
+				} else {
+					ready();
+				}
 			} else {
-				ready();
+				console.error("togglr: unsupported browser");
 			}
 		};
 
