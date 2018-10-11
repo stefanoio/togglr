@@ -24,7 +24,7 @@ Togglr works on dynamic added nodes out of the box.
 
 When togglr initialize successfully, it adds a `togglr` class to the html node. This feature can be used to implement no-js fallbacks via css.
 
-Here are some examples: http://stefano.io/togglr/examples/ (no fancy stuff, just some demo of what you can do with togglr)
+Here are some examples: http://stefanoio.github.io/togglr/examples/ (no fancy stuff, just some demo of what you can do with togglr)
 
 To build a minified version inside the dist folder you can use:
 ```
